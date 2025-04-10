@@ -842,6 +842,80 @@ font-size: 21px;
      color: #2bcc91;
 }
 
+/* Play Store Popup Styles */
+.playstore-popup {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  transform: translateY(150%);
+  transition: transform 0.5s ease;
+  max-width: 300px;
+  overflow: hidden;
+  display: none;
+}
+
+.playstore-popup.show {
+  transform: translateY(0);
+  display: block;
+}
+
+.popup-content {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.popup-logo {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.playstore-popup h3 {
+  color: #2E7D32;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.playstore-popup p {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.download-btn {
+  display: block;
+  margin: 0 auto;
+}
+
+.download-btn img {
+  height: 50px;
+  width: auto;
+}
+
+.close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+@media (max-width: 576px) {
+  .playstore-popup {
+    max-width: 90%;
+    left: 5%;
+    right: 5%;
+    bottom: 10px;
+  }
+}
 
 /** end footer **/
 
