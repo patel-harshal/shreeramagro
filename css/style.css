@@ -917,5 +917,44 @@ font-size: 21px;
   }
 }
 
+/** New Popup view**/
+.playstore-banner {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #2E7D32;
+  color: white;
+  padding: 10px 0;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.playstore-banner .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.playstore-banner img {
+  height: 40px;
+}
+
+.playstore-banner span {
+  font-weight: bold;
+}
+
+.close-banner {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-left: 15px;
+}
+
 /** end footer **/
 
