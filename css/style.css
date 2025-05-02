@@ -870,9 +870,9 @@ font-size: 21px;
 }
 
 .popup-logo {
-  width: 60px;
-  height: 60px;
-  margin-bottom: 15px;
+  width: 90px;
+  height: 90px;
+  /* margin-bottom: 15px; */
 }
 
 .playstore-popup h3 {
@@ -958,3 +958,248 @@ font-size: 21px;
 
 /** end footer **/
 
+
+/* Products Page Styles */
+.products-banner {
+     /* background: linear-gradient(rgba(0, 0, 0, 0.6), url('../images/products-banner.jpg'); */
+     background-size: cover;
+     background-position: center;
+     color: #fff;
+     padding: 100px 0;
+     text-align: center;
+     margin-top: 80px;
+   }
+   
+   .products-header h1 {
+     font-size: 2.8rem;
+     margin-bottom: 15px;
+     color: #fff;
+   }
+   
+   .products-header p {
+     font-size: 1.2rem;
+     opacity: 0.9;
+   }
+   
+   .section-title {
+     text-align: center;
+     margin-bottom: 40px;
+   }
+   
+   .section-title h2 {
+     font-size: 2.2rem;
+     color: #2E7D32;
+     position: relative;
+     display: inline-block;
+     padding-bottom: 15px;
+   }
+   
+   .section-title h2::after {
+     content: '';
+     position: absolute;
+     bottom: 0;
+     left: 50%;
+     transform: translateX(-50%);
+     width: 80px;
+     height: 3px;
+     background-color: #4CAF50;
+   }
+   
+   .section-title p {
+     color: #666;
+     font-size: 1.1rem;
+   }
+   
+   /* Category Cards */
+   .category-card {
+     background: #fff;
+     border-radius: 8px;
+     padding: 25px 20px;
+     text-align: center;
+     margin-bottom: 30px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+     transition: all 0.3s ease;
+   }
+   
+   .category-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+   }
+   
+   .category-icon {
+     width: 80px;
+     height: 80px;
+     margin: 0 auto 20px;
+     background-color: #f5f9f5;
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   }
+   
+   .category-icon img {
+     max-width: 50px;
+     max-height: 50px;
+   }
+   
+   .category-card h3 {
+     font-size: 1.3rem;
+     color: #2E7D32;
+     margin-bottom: 15px;
+   }
+   
+   .btn-view {
+     display: inline-block;
+     padding: 8px 20px;
+     background-color: #4CAF50;
+     color: #fff;
+     border-radius: 4px;
+     font-weight: 500;
+     transition: all 0.3s ease;
+   }
+   
+   .btn-view:hover {
+     background-color: #388E3C;
+     color: #fff;
+     text-decoration: none;
+   }
+   
+   /* Product Listing Page Styles */
+.product-listing {
+     background-color: #f8f9fa;
+     min-height: calc(100vh - 160px);
+   }
+   
+   .product-card {
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+     border: none;
+     border-radius: 10px;
+     overflow: hidden;
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   }
+   
+   .product-card:hover {
+     transform: translateY(-5px);
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+   }
+   
+   .product-card .card-img-top {
+     height: 180px;
+     object-fit: contain;
+     padding: 20px;
+     background-color: #fff;
+   }
+   
+   .product-card .card-body {
+     padding: 1.25rem;
+   }
+   
+   .product-card .price {
+     font-weight: bold;
+     color: #28a745;
+     font-size: 1.1rem;
+   }
+   
+   .product-card .card-footer {
+     border-top: none;
+     background-color: rgba(0, 0, 0, 0.03);
+   }
+   
+   /* Product Details Modal Styles */
+   #productDetailsModal .modal-content {
+     border-radius: 15px;
+   }
+   
+   #productDetailsModal .modal-header {
+     border-bottom: 1px solid #dee2e6;
+   }
+   
+   #productDetailsModal .modal-body {
+     padding: 2rem;
+   }
+   
+   #productDetailsModal #mainProductImage {
+     max-height: 400px;
+     width: 100%;
+     object-fit: contain;
+     border: 1px solid #eee;
+     border-radius: 8px;
+   }
+   
+   #productDetailsModal .thumbnail {
+     cursor: pointer;
+     transition: all 0.3s ease;
+     height: 80px;
+     object-fit: contain;
+   }
+   
+   #productDetailsModal .thumbnail:hover {
+     border-color: #28a745;
+   }
+   
+   #productDetailsModal .thumbnail.active {
+     border-color: #28a745;
+     transform: scale(1.05);
+   }
+   
+   #productDetailsModal table td {
+     padding: 0.5rem;
+   }
+   
+   /* Responsive Adjustments */
+   @media (max-width: 768px) {
+     .product-card .card-img-top {
+       height: 150px;
+     }
+     
+     #productDetailsModal .modal-body {
+       padding: 1rem;
+     }
+     
+     #productDetailsModal #mainProductImage {
+       max-height: 300px;
+     }
+   }
+   
+   @media (max-width: 576px) {
+     .product-card {
+       margin-bottom: 1.5rem;
+     }
+     
+     #productDetailsModal .thumbnail {
+       height: 60px;
+     }
+   }
+   .fa {
+     padding: 20px;
+     font-size: 30px;
+     width: 50px;
+     text-align: center;
+     text-decoration: none;
+     border-radius: 50%;
+
+   }
+   
+   /* Add a hover effect if you want */
+   .fa:hover {
+     opacity: 0.7;
+   }
+   
+   /* Set a specific color for each brand */
+   
+   /* Facebook */
+   .fa-facebook {
+     background: #3B5998;
+     color: white;
+   }
+   
+   /* instagram */
+   .fa-instagram {
+     background: #ee559a;
+     color: white;
+   }
+   /* whatsapp */
+   .fa-whatsapp {
+     background: #0ed05f;
+     color: white;
+   }
